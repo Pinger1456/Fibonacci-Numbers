@@ -1,0 +1,91 @@
+Fibonacci Sequence Project
+Этот проект вычисляет числа Фибоначчи. Последовательность Фибоначчи начинается с 0 и 1, а каждое последующее число равно сумме двух предыдущих. Программа запрашивает у пользователя номер числа Фибоначчи, которое он хочет вычислить, и выводит его.
+
+Установка
+Убедитесь, что у вас установлен Python 3.x. Если нет, скачайте и установите его с официального сайта.
+
+Склонируйте репозиторий:
+
+bash
+Copy
+git clone https://github.com/yourusername/fibonacci_project.git
+Перейдите в директорию проекта:
+
+bash
+Copy
+cd fibonacci_project
+(Опционально) Создайте виртуальное окружение:
+
+bash
+Copy
+python -m venv venv
+source venv/bin/activate  # Для Linux/macOS
+venv\Scripts\activate     # Для Windows
+Установите зависимости (если они есть):
+
+bash
+Copy
+pip install -r requirements.txt
+Использование
+Запустите программу:
+
+bash
+Copy
+python main.py
+Программа запросит у вас номер числа Фибоначчи, которое вы хотите вычислить. Введите число и нажмите Enter. Если вы хотите выйти из программы, введите QUIT.
+
+Пример работы:
+
+Copy
+Enter the Nth Fibonacci number you wish to
+calculate (such as 5, 50, 1000, 9999), or QUIT to quit:
+> 10
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+The #10 Fibonacci number is 34.
+Структура проекта
+Copy
+fibonacci_project/
+│
+├── main.py                # Основной скрипт для запуска программы
+├── fibonacci.py           # Логика вычисления чисел Фибоначчи
+├── config.py              # Конфигурационные параметры
+├── README.md              # Список зависимостей
+└── tests/                 # Директория с тестами
+    └── test_fibonacci.py  # Тесты для модуля fibonacci.py           
+      
+Зависимости
+Проект не требует внешних зависимостей. Если вы хотите использовать flake8 для проверки стиля кода, установите его:
+
+bash
+Copy
+pip install flake8
+Тестирование
+Для запуска тестов используйте команду:
+
+bash
+Copy
+python -m unittest tests/test_fibonacci.py
+Проверка стиля кода
+Для проверки стиля кода по стандартам PEP8 используйте flake8:
+
+bash
+Copy
+flake8 .
+Лицензия
+Этот проект распространяется под лицензией MIT. Подробнее см. в файле LICENSE.
+
+Как внести вклад
+Если вы хотите внести вклад в проект, пожалуйста, следуйте этим шагам:
+
+Форкните репозиторий.
+
+Создайте новую ветку (git checkout -b feature/YourFeatureName).
+
+Сделайте изменения и закоммитьте их (git commit -m 'Add some feature').
+
+Запушьте ветку (git push origin feature/YourFeatureName).
+
+Создайте Pull Request.
+
